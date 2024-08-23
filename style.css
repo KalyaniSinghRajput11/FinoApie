@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: kinta;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+#left{
+    position: relative;
+    width: 40%;
+    height: 100%;
+    background-color:rgb(97, 138, 93);
+   padding: 20px 50px;
+}
+#right{
+    position: relative;
+    width: 60%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cG9ydHJhaXR8ZW58MHx8MHx8fDA%3D);
+    background-size: cover;
+    background-position: center;
+}
+#nav{
+    display: flex;
+    color: aliceblue;
+    gap: 40px;
+    margin-bottom: 70px;
+}
+#nav a{
+    color: white;
+    text-decoration: none;
+}
+#nav h3{
+    margin-right: 30px;
+}
+
+#main1{
+    font-weight: 300;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-size: 38px;
+}
+
+#main2{
+    position: absolute;
+    font-size: 15px;
+    color: white;
+    bottom: 4%;
+    width: 60%;
+    line-height: 21px;
+    font-weight: 600;
+}
+#right #logo{
+   background-image: url(data:image/png;base64,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);
+   background-size: cover;
+   background-position: center;
+   position: absolute;
+    height: 120px;
+    width: 120px;
+  transform: translate(-50%,0);
+   bottom: 20%;
+  border-radius: 50%;
+
+}
+#right h2{
+    position: absolute;
+    
+    text-transform:uppercase ;
+    font-size: 30px;
+    font-weight: 100;
+    /* width: ;
+    line-height: ;
+    padding: ;
+    left: ;
+    bottom: ; */
+    margin-left: 870px;
+}
+#right #one{
+    margin-top: 400px;
+   
+}
